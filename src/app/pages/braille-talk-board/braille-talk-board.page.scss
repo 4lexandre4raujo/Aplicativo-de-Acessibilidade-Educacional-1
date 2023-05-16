@@ -1,0 +1,32 @@
+ion-content{
+  font-family:Calligraffitti !important;
+    font-size:1.1em;
+    .container-background{
+        display: flex;
+        height: 100%;
+        .background1{
+            background-image: url('/assets/background-playground.jpg');
+            background-size: cover;
+            width: 40%;
+
+            .border{
+              align-items: center;
+              padding: 10px;
+              
+            }
+            img{
+              justify-content: center;
+              width: 55%;
+            }
+        }
+        .background2{
+            background-image: url('/assets/background-green board.png');
+            background-size: cover;
+            max-width: 60%;
+            height: 100%;
+            .border{
+              padding: 50px;
+            }
+        }
+    }
+}
