@@ -3,12 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   {
@@ -24,12 +20,16 @@ const routes: Routes = [
     loadChildren: () => import('./pages/braille-talk-board/braille-talk-board.module').then( m => m.BrailleTalkBoardPageModule)
   },
   {
-    path: 'braille-tutorial-braille',
-    loadChildren: () => import('./pages/braille-tutorial-braille/braille-tutorial-braille.module').then( m => m.BrailleTutorialBraillePageModule)
-  },
-  {
     path: 'braille-alphabet-braille',
     loadChildren: () => import('./pages/braille-alphabet-braille/braille-alphabet-braille.module').then( m => m.BrailleAlphabetBraillePageModule)
+  },
+  {
+    path: 'braille-tutorial-morse',
+    loadChildren: () => import('./pages/braille-tutorial-morse/braille-tutorial-morse.module').then( m => m.BrailleTutorialMorsePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
 ];
 

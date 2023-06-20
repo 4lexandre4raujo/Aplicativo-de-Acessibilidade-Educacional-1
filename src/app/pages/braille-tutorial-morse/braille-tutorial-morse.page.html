@@ -1,0 +1,46 @@
+<ion-content [fullscreen]="true">
+  <div class="background">
+    <ion-row class="ion-justify-content-between">
+      <ion-col size="2" >{{ msgTopLeft }}</ion-col>
+      <ion-col size="4" >{{ msgTopMiddle }}</ion-col>
+      <ion-col size="2" >{{ msgTopRight }}</ion-col>
+    </ion-row>
+    <h2>{{message}}</h2>
+    <ion-label style="font-size: 40px">0</ion-label>
+    <div class="content">
+      <div class="morse"></div>
+      <div class="spaceicon"></div>
+      <div class="morse"></div>
+      <div class="spaceicon"></div>
+      <div class="morse"></div>
+      <div class="spaceicon"></div>
+      <div class="morse"></div>
+      <div class="spaceicon"></div>
+      <div class="morse"></div>
+    </div>
+    
+    <div class="footerBox">
+      <ion-row class="ion-justify-content-between">
+        <ion-col size="2" [routerLink]="['/braille-tutorial-border-button']">{{ msgBottomLeft }}</ion-col>
+        <ion-col size="6">
+          <div>
+            <div class="circulo">
+            </div>
+            Curto
+          </div>
+
+          <div class="spacetext">  
+            Vibração Morse
+          </div>
+
+          <div>
+            <div class="retangulo">
+          </div>
+            Longo
+          </div>
+        </ion-col>
+        <ion-col size="2">{{ msgBottomRight }}</ion-col>
+      </ion-row>
+    </div>
+  </div>
+</ion-content>

@@ -22,7 +22,22 @@ ion-content{
 
         .content{
             padding: 75px 20px 75px 20px;
-         }
+        }
+        .circulo{
+            background: rgb(255, 255, 255);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+        .spacetext{
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .retangulo{
+            background: rgb(255, 255, 255);
+            width: 50px;
+            height: 20px;
+        }
 
         .footerBox {
             position: absolute;
